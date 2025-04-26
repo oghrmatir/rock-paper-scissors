@@ -15,4 +15,11 @@ function getComputerChoice() {
   }
 }
 
-console.log(getComputerChoice())
+function getHumanChoice() {
+  let humanChoice = prompt("You choose 'rock', 'paper' or 'scissors'? ");
+  if (humanChoice === "rock" || humanChoice === "paper" || humanChoice === "scissors") {
+    return humanChoice;
+  }
+}
+
+console.log(getHumanChoice());
