@@ -3,7 +3,7 @@
 
   A Game of Rock Paper Scissors ([live preview](https://oghrmatir.github.io/rock-paper-scissors/))
 
-  <img src="./images/cover.png" alt="Cover of Rock Papers Scissors website">
+  <img src="./img/cover.png" alt="Cover of Rock Papers Scissors website">
 </div>
 
 ## About
@@ -13,10 +13,10 @@
 
 ## Showcase
 <div align="center">
-  <img src="./images/screenshots/sample.jpg" alt="Screenshot of sample page">
+  <img src="./img/screenshots/sample.jpg" alt="Screenshot of sample page">
   <p>This is a screenshot of the index page.</p>
 
-  <img src="./images/demo/demo.gif" alt="Screen cast of rock-paper-scissors">
+  <img src="./img/demo/demo.gif" alt="Screen cast of rock-paper-scissors">
   <p>This is a screen cast of the website.</p>
 </div>
 
