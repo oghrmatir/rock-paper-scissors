@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font-family: "Chewy", "UnifrakturCook", serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+h1 {
+  font-size: 70px;
+  text-shadow:
+  1px 1px 2px rgb(255, 251, 0),
+  0 0 1em rgb(223, 223, 233),
+  0 0 0.2em rgb(255, 102, 0);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.buttons .btn {
+  width: 175px;
+  height: 175px;
+  font-size: 45px;
+  border-radius: 20px;
+  background-color: rgb(245, 248, 255);
+  border: 3mm outset rgba(191, 186, 185, 0.6);
+  color: #f60021;
+  cursor: pointer;
+}
+
+.buttons .reset {
+  width: 125px;
+  height: 125px;
+  font-size: 36px;
+  background-color: #e97080;
+  color: white;
+  border: 3mm outset rgba(33, 31, 30, 0.6);
+}
+
+.buttons .rock {
+  box-shadow: 5px 2px 5px rgb(211, 168, 168);
+}
+
+.buttons .paper {
+  box-shadow: 5px 2px 5px rgb(206, 244, 215);
+}
+
+.buttons .scissors {
+  box-shadow: 5px 2px 5px rgb(190, 167, 202);
+}
+
+.buttons .reset {
+  box-shadow: 5px 2px 5px rgb(116, 116, 99);
+}
+
+.buttons .btn:active {
+  background-color: #e97080;
+  color: white;
+  border: 3mm outset rgba(33, 31, 30, 0.6);
+}
+
+.buttons .reset:active {
+  background-color: rgb(245, 248, 255);
+  border: 3mm outset rgba(191, 186, 185, 0.6);
+  color: #f60021;
+  cursor: pointer;
+}
+
+.result,
+.score,
+.winner {
+  font-size: 56px;
+  text-shadow:
+  1px 1px 2px red,
+  0 0 1em rgb(212, 212, 242),
+  0 0 0.2em rgb(235, 235, 255);
+}
+
+.result {
+  color: hsl(0, 70%, 47%);
+  
+}
+
+.score {
+  color: hsl(25, 70%, 47%);
+}
