@@ -65,15 +65,32 @@ function playRound(humanChoice, computerChoice) {
   }
 }
 
+function declareWinner(humanScore, computerScore) {
+  if (humanScore === 5) {
+    winner.textContent = "Human won!";
+  } else if (computerScore === 5) {
+    winner.textContent = "Computer won!";
+  }
+}
+
 const buttons = document.querySelectorAll(".btn");
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
+    if (humanScore === 5 || computerScore === 5) {
+      declareWinner(humanScore, computerScore);
+      return;
+    }
+
     const humanSelection = button.textContent;
     const computerSelection = getComputerChoice();
     
     playRound(humanSelection, computerSelection);
+
+    score.textContent = `Computer: ${computerScore}, Human: ${humanScore}`;
   });
 });
 
 const result = document.querySelector(".result");
+const score = document.querySelector(".score");
+const winner = document.querySelector(".winner");
