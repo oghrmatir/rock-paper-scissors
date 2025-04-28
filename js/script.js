@@ -37,29 +37,29 @@ let computerScore = 0;
 
 function playRound(humanChoice, computerChoice) {
   if (humanChoice === computerChoice) {
-    console.log("It's a draw!");
+    result.textContent = "It's a draw!";
   } else if (humanChoice === "Rock") {
     if (computerChoice === "Paper") {
-      console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
+      result.textContent = `You lose! ${computerChoice} beats ${humanChoice}.`;
       computerScore++;
     } else if (computerChoice === "Scissors") {
-      console.log(`You win! ${humanChoice} beats ${computerChoice}.`);
+      result.textContent = `You win! ${humanChoice} beats ${computerChoice}.`;
       humanScore++;
     }
   } else if (humanChoice === "Paper") {
     if (computerChoice === "Scissors") {
-      console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
+      result.textContent = `You lose! ${computerChoice} beats ${humanChoice}.`;
       computerScore++;
     } else if (computerChoice === "Rock") {
-      console.log(`You win! ${humanChoice} beats ${computerChoice}.`);
+      result.textContent = `You win! ${humanChoice} beats ${computerChoice}.`;
       humanScore++;
     }
   } else if (humanChoice === "Scissors") {
     if (computerChoice === "Rock") {
-      console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
+      result.textContent = `You lose! ${computerChoice} beats ${humanChoice}.`;
       computerScore++;
     } else if (computerChoice === "Paper") {
-      console.log(`You win! ${humanChoice} beats ${computerChoice}.`);
+      result.textContent = `You win! ${humanChoice} beats ${computerChoice}.`;
       humanScore++;
     }
   }
@@ -75,3 +75,5 @@ buttons.forEach((button) => {
     playRound(humanSelection, computerSelection);
   });
 });
+
+const result = document.querySelector(".result");
