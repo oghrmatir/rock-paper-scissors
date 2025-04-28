@@ -15,13 +15,6 @@ function getComputerChoice() {
   }
 }
 
-function getHumanChoice() {
-  const humanChoice = prompt("Enter 'Rock', 'Paper' or 'Scissors': ");
-  if (humanChoice === "" || humanChoice === null) return;
-  const modHumanChoice = humanChoice.toLowerCase();
-  return modHumanChoice.at(0).toUpperCase() + modHumanChoice.slice(1);
-}
-
 function declareWinner(humanScore, computerScore) {
   if (humanScore === computerScore) {
     console.log("Nobody won! It's a draw!");
